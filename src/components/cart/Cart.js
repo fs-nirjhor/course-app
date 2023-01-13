@@ -26,7 +26,7 @@ return (
 <div style={alertStyle} class="modal">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-body text-success ">
+      <div class="modal-body text-success pt-5">
          <h1>Paid Successfully !</h1>
       </div>
       <div class="modal-footer">
