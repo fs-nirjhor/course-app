@@ -2,6 +2,8 @@ import React from 'react';
 import courseData from "./Course.json";
 import Cart from "../cart/Cart";
 import { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserAlt, faVideoCamera, faStar, faDollar} from '@fortawesome/free-solid-svg-icons';
 
 const Course = () => {
   const [addedCourse, setAddedCourse] = useState([]);
@@ -21,9 +23,10 @@ return (
       <div className="card-body">
         <h5 className="card-title">{course.title}</h5>
         <p className="card-text">{course.title} is a very efficient course for basic to advence. You'll earn the best guidelines from this course. </p>
-        <b>{course.instructor}</b> <br />
-        <b>⭐{course.rating}</b> <br />
-        <big>${course.price}</big>
+        <b><FontAwesomeIcon icon={faUserAlt} /> {course.instructor}</b> <br />
+        <b><FontAwesomeIcon icon={faVideoCamera} /> {course.lecture} </b> <br />
+        <b><FontAwesomeIcon icon={faStar} /> {course.rating}</b> <br />
+        <big><FontAwesomeIcon icon={faDollar} />{course.price}</big>
       </div>
       <div className="card-footer">
         <button className="btn btn-primary w-100" onClick={() => enrollButtonHandler(course)}>Enroll Now!</button>
