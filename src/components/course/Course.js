@@ -25,8 +25,8 @@ return (
         <p className="card-text">{course.title} is a very efficient course for basic to advence. You'll earn the best guidelines from this course. </p>
         <b><FontAwesomeIcon icon={faUserAlt} /> {course.instructor}</b> <br />
         <b><FontAwesomeIcon icon={faVideoCamera} /> {course.lecture} </b> <br />
-        <b><FontAwesomeIcon icon={faStar} /> {course.rating}</b> <br />
-        <big><FontAwesomeIcon icon={faDollar} />{course.price}</big>
+        <b><FontAwesomeIcon icon={faStar} /> {course.rating}</b>
+        <h3 style={{color:"brown", marginTop:'10px'}}><FontAwesomeIcon icon={faDollar} /> {course.price}</h3>
       </div>
       <div className="card-footer">
         <button className="btn btn-primary w-100" onClick={() => enrollButtonHandler(course)}>Enroll Now!</button>
