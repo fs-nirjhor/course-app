@@ -13,7 +13,7 @@ const Course = () => {
   };
 return (
   <div>
-  <Cart addedCourse={addedCourse}></Cart>
+  <Cart addedCourse={addedCourse} setAddedCourse={setAddedCourse}></Cart>
  <div className="course-container row row-cols-1 row-cols-md-3 g-4 text-start">
  {
    courseData.map(course => 

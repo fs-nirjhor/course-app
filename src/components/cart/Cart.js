@@ -10,6 +10,7 @@ const Cart = (props) => {
   };
   const okButtonHandler = event => {
     setAlertStyle({display: 'none'});
+    props.setAddedCourse([]);
   };
 return (
   <div className="pt-3 text-center sticky-top">
